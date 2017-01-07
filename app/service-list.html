@@ -1,0 +1,20 @@
+<div class="top-bar">
+        <h1>services</h1>
+        <p><a href="#">Home</a> / Services</p>
+    </div>
+    <!-- end top bar -->
+
+    <div class="container main-container">
+        <div class="clearfix">
+  
+  <div class="col-md-4 service-box" *ngFor="let hero of service">
+                <i class="ion-android-favorite-outline size-50"></i>
+                <h3>{{hero.name}}</h3>
+                <div class="h-10"></div>
+                <p>{{hero.disc}}</p>
+            </div>
+
+  
+        </div>
+
+    </div>

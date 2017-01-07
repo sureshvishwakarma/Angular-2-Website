@@ -1,0 +1,30 @@
+ 
+  <div *ngIf="hero">
+ <div class="top-bar">
+        <h1>{{hero.name}}</h1>
+        <p><a href="#">Home</a> / <a href="#">portfolio</a> / project title</p>
+    </div>
+    <!-- end top-bar -->
+    
+    <!-- main-container -->
+   
+    <div class="container main-container">
+        <div class="col-md-12">
+            <img src="{{hero.image}}" alt="" class="img-responsive" style="width:100%;" />
+            <div class="h-30"></div>
+        </div>
+
+        <div class="col-md-12">
+            <h3 class="text-uppercase">{{hero.name}}</h3>
+            <h5>{{hero.name}}</h5>
+            <div class="h-30"></div>
+        </div>
+
+        <div class="col-md-12">
+            <p>{{hero.disc}}</p>
+            <button (click)="goback()" type="button" class="btn btn-primary">Back</button>
+        </div>
+           
+       
+    </div>
+    <!-- end main-container -->
